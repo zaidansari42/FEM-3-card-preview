@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap");
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+:root {
+  --light_orange: hsl(31, 77%, 52%);
+  --Dark_cyan: hsl(184, 100%, 22%);
+  --Very_dark_cyan: hsl(179, 100%, 13%);
+
+  /*  (paragraphs) */
+  --Transparent_white: hsla(0, 0%, 100%, 0.75);
+  /* (background, headings, buttons) */
+  --Very_light_gray: hsl(0, 0%, 95%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--Very_light_gray);
+
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 15px;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+main.container {
+  margin: 2em;
+
+  border-radius: 1rem;
+
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.card {
+  border: 1px solid;
+
+  padding: 2em 3em;
+
+  color: var(--Transparent_white);
+}
+
+.card p {
+  margin: 3em 0;
+}
+
+h1 {
+  font-family: "Big Shoulders Display", cursive;
+  text-transform: uppercase;
+
+  margin: 1em 0;
+
+  color: var(--Very_light_gray);
+}
+
+.card a {
+  padding: 1em 2em;
+
+  border-radius: 5rem;
+
+  text-decoration: none;
+
+  font-size: 10px;
+
+  background-color: var(--Very_light_gray);
+}
+
+a.a_orange {
+  color: var(--light_orange);
+}
+a.a_cyan {
+  color: var(--Dark_cyan);
+}
+a.a_darkcyan {
+  color: var(--Very_dark_cyan);
+}
+
+.orange {
+  background-color: var(--light_orange);
+}
+
+.cyan {
+  background-color: var(--Dark_cyan);
+}
+
+.darkcyan {
+  background-color: var(--Very_dark_cyan);
+}
+
+.card a:hover {
+  background: transparent;
+
+  border: 1px solid;
+  color: var(--Transparent_white);
+}
+
+@media only screen and (min-width: 700px) {
+  main.container {
+    flex-direction: row;
+
+    max-width: 800px;
+  }
+
+  .container a {
+    font-size: 13px;
+  }
+}
+
+@media only screen and (min-width: 320px) {
+  .container a {
+    font-size: 15px;
+  }
+}
