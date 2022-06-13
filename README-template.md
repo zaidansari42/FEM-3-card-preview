@@ -41,4 +41,4 @@ Users should be able to:
 
 ## Author
 
-- Twitter - [@yourusername](https://www.twitter.com/zaidansari42)
+- Twitter - [@zaidansari42](https://www.twitter.com/zaidansari42)
